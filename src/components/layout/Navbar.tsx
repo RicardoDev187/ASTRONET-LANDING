@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../ui/Button'
 
 
@@ -8,7 +9,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-zinc-200/50">
           
           {/* Logo a la izquierda */}
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <span className="text-2xl font-black tracking-tighter text-zinc-950 uppercase leading-none">
               AN<span className="text-zinc-400 font-light">′</span>
             </span>
@@ -17,7 +18,7 @@ export default function Navbar() {
               <div className="text-sm font-semibold text-zinc-950">Astronet</div>
               <div className="text-xs text-zinc-500">Software Development Studio</div>
             </div>
-          </a>
+          </Link>
 
           {/* Central*/}
           <div className="hidden md:flex items-center gap-10">
@@ -45,13 +46,15 @@ export default function Navbar() {
             </button>
 
             
+           <Link to="/Contact"> 
             <Button 
-              href="#contact" 
+              //href="#contact"  
               variant="primary" 
               className="rounded-xl bg-[#A3FF00] text-zinc-950 font-black uppercase tracking-tight text-xs px-8 h-12 hover:brightness-105 shadow-[0_4px_14px_0_rgba(163,255,0,0.3)] transition-all"
             >
               Start a project
             </Button>
+            </Link>
           </div>
         </nav>
       </div>

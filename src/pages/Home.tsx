@@ -1,5 +1,3 @@
-import Footer from '../components/layout/Footer'
-import Navbar from '../components/layout/Navbar'
 import CTA from '../components/sections/CTA'
 import Features from '../components/sections/Features'
 import Hero from '../components/sections/Hero'
@@ -12,9 +10,7 @@ import InfoSegment from '../components/sections/InfoSegment'
 
 export default function Home() {
   return (
-    <div className="min-h-dvh bg-white text-zinc-950">
-      <Navbar />
-      <main>
+    <>
         <Hero />
         <Showcase />
         <Marquee />
@@ -24,8 +20,6 @@ export default function Home() {
         <InfoSegment />
         <Marquee />
         <CTA />
-      </main>
-      <Footer />
-    </div>
+    </>
   )
 }
