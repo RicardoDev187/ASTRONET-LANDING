@@ -22,9 +22,9 @@ export default function Navbar() {
 
           {/* Central*/}
           <div className="hidden md:flex items-center gap-10">
-            <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
+            <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
               What we do
-            </a>
+            </Link>
             <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
               Case Studies
             </a>
