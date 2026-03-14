@@ -61,12 +61,14 @@ export default function PortfolioCarousel() {
         <Swiper
           modules={[Navigation, Autoplay]}
           onBeforeInit={(swiper) => { swiperRef.current = swiper; }}
-          spaceBetween={30}
-          slidesPerView={1.3}
-          loop={true} 
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          centeredSlides={false}
           breakpoints={{
-            768: { slidesPerView: 2.3 },
-            1024: { slidesPerView: 3.3 }, 
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }, 
           }}
           className="!overflow-visible"
         >

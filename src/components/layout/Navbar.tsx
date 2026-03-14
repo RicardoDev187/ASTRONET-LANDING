@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Button from '../ui/Button'
-import { Import, Moon, Sun } from 'lucide-react'
+import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Menu from './Menu/Menu';
@@ -51,14 +51,14 @@ const closeMenuOnNavigate = () => {
 
   return (
     <>
-    <header className="fixed top-6 left-0 w-full z-50 px-4">
-      <div className="mx-auto max-w-6xl" >
+    <header className="fixed top-4 left-0 right-0 w-full z-50 px-3 sm:px-4">
+      <div className="mx-auto max-w-6xl">
         <nav 
         onClick={(e) => {
               if ((e.target as HTMLElement).closest('a')) {
                 closeMenuOnNavigate();
               } }} 
-        className="flex items-center justify-between bg-white/90 dark:bg-zinc-950/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-zinc-200/50 dark:border-white/10" >
+        className="flex flex-wrap items-center justify-between bg-white/90 dark:bg-zinc-950/80 backdrop-blur-md px-3 sm:px-5 py-2 sm:py-3 rounded-2xl shadow-sm border border-zinc-200/50 dark:border-white/10" >
           
           {/* Logo a la izquierda */}
           <Link to="/" className="flex items-center">
@@ -75,9 +75,9 @@ const closeMenuOnNavigate = () => {
 
           {/* Central*/}
           <div className="hidden md:flex flex-1 items-center  gap-10 ml-12 ">
-            <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+            <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               What we do
-            </Link>
+            </a>
             <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Services
             </a>
@@ -95,10 +95,10 @@ const closeMenuOnNavigate = () => {
           {/* Aqui falta la etiqueta de Location */}
 
           {/* Menú y Botón - Derecha */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-3 sm:gap-6">
             <button 
                 onClick={handleMenuToggle}
-                className="flex items-center gap-2 group cursor-pointer"
+                className="flex items-center gap-2 group cursor-pointer text-xs sm:text-sm" 
               >
                 <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white">
                   {isOpen ? "Menu" : "Menu"}
@@ -120,11 +120,11 @@ const closeMenuOnNavigate = () => {
             </button>
 
             
-           <Link to="/Contact"> 
+           <Link to="/contact"> 
             <Button 
               //href="#contact"  
               variant="primary" 
-              className="rounded-xl bg-[#A3FF00] text-zinc-950 font-black uppercase tracking-tight text-xs px-8 h-12 hover:brightness-105 shadow-[0_4px_14px_0_rgba(163,255,0,0.3)] transition-all"
+              className="rounded-xl bg-[#A3FF00] text-zinc-950 font-black uppercase tracking-tight text-xs sm:text-sm px-3 sm:px-6 h-9 sm:h-11 hover:brightness-105 shadow-[0_4px_14px_0_rgba(163,255,0,0.3)] transition-all"
             >
               Start a project
             </Button>
@@ -145,7 +145,7 @@ const closeMenuOnNavigate = () => {
                 exit={{ opacity: 0 }}
                 className="fixed inset-0 z-[45] bg-zinc-950"
               >
-             <Menu />
+             <Menu onNavigate={closeMenuOnNavigate} />
             </motion.div>
             )}
 

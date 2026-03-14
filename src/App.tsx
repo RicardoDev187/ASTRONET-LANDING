@@ -32,9 +32,8 @@ export default function App() {
            <Route path="Booking" element={<Booking/>} />
            <Route path="Community-Platforms" element={<Community/>} />
            <Route path="eCommerce" element={<ECommerce/>} />
-
           </Route>
-
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
