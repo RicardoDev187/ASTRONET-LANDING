@@ -1,3 +1,6 @@
+import imgCompany from "/src/assets/Company1.png";
+
+
 export default function HeroCompany() {
   return (
     <section className="relative w-full h-[84vh] bg-[#0d1110] overflow-hidden">
@@ -5,7 +8,7 @@ export default function HeroCompany() {
       {/* 2. Imagen de fondo del Mockup del Portátil */}
       <div className="absolute top-0 right-0 w-full h-full pointer-events-none z-0">
         <img 
-          src="/laptop-mockup.png"
+          src={imgCompany}
           className="w-full h-full object-contain object-right-bottom opacity-60" 
           alt="Background decor"
         />
@@ -16,12 +19,12 @@ export default function HeroCompany() {
             <div className="max-w-7xl mx-auto">
           
                 <p className="text-[#A3FF00] font-black text-[14px] tracking-[0.4em] uppercase mb-6">
-                    Company Websites
+                   Community Platforms
                 </p>
 
                 <h2 className="text-white text-5xl lg:text-[85px] font-serif leading-[0.9] tracking-tighter">
                     Enhance your business with <br />
-                    <span className="italic">bespoke company websites</span>
+                    <span className="italic">Bespoke company websites</span>
                 </h2>
           
              </div>

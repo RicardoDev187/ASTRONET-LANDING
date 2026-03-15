@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-export default function FeatureCommunity() {
+export default function FeatureeCommerce() {
   return (
     <>
 
@@ -10,7 +10,7 @@ export default function FeatureCommunity() {
     
         <div className="max-w-md">
           <h2 className="text-zinc-900 text-5xl lg:text-[42px] font-serif leading-[1.2] tracking-tighter italic">
-            Business owners are now looking to create their own community platforms to connect with their audience.
+            Effective eCommerce stores can make all the difference for your business.
           </h2>
         </div>
 
@@ -18,11 +18,9 @@ export default function FeatureCommunity() {
         <div className="flex flex-col items-start space-y-8">
           <div className="space-y-6">
             <p className="text-zinc-500 text-lg leading-relaxed font-light">
-              Businesses and creators are turning to more specialised and bespoke community platforms to engage with their audience.
-            </p>
+         Whether you're selling cosmetics, furniture, or any other products, you need a platform that not only showcases your offerings but also makes it easy for customers to make purchases.            </p>
             <p className="text-zinc-500 text-lg leading-relaxed font-light">
-              We recognise the importance of fostering meaningful connections and nurturing online communities. Our dynamic community platforms are designed to facilitate interaction, collaboration, and monetisation opportunities for businesses, coaches, tutors, and special interest groups alike.
-            </p>
+            At ASTRONET, we specialise in creating online stores that streamline the shopping experience and maximise revenue. Our solutions are designed to simplify everything from inventory management to payment processing, allowing you to focus on growing your business.            </p>
           </div>
 
 

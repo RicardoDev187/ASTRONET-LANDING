@@ -1,0 +1,36 @@
+import imgBooking from "/src/assets/Booking.jpg";
+
+export default function HeroBooking() {
+  return (
+    <section className="relative w-full h-[84vh] bg-[#f4f4f4] overflow-hidden">
+      
+    
+      <div className="absolute top-0 right-0 w-full h-full pointer-events-none z-0">
+        <img 
+          src={imgBooking}
+          className="w-full h-full object-contain object-right-bottom opacity-100" 
+          alt="Background decor"
+        />
+      </div>
+
+            {/*'pb-20', espacio con el borde de abajo */}
+         <div className="absolute bottom-0 left-0 w-full px-6 md:px-20 pb-20 z-10">
+            <div className="max-w-7xl mx-auto">
+          
+                <p className="text-Black font-black text-[14px] tracking-[0.4em] uppercase mb-6">
+                   Booking Websites
+                </p>
+
+                <h2 className="text-Black text-5xl lg:text-[85px] font-serif leading-[0.9] tracking-tighter">
+                   Simplify Scheduling & <br />
+                    <span className="italic">Generate Revenue</span>
+                </h2>
+          
+             </div>
+      </div>
+
+        {/* Franja de transición  */}
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-white/10"></div>
+    </section>
+  );
+}
