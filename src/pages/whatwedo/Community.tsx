@@ -3,7 +3,8 @@ import ScrollingLogos from "../../components/sections/Parallax-Action/ScrollingL
 import StartProyectOne from "../../components/sections/Parallax-Action/StarProyectOne";
 import HeroCommunity from "../../components/sections/Parallax-Action/Hero/HeroCommunity";
 import FeatureCommunity from "../../components/sections/Parallax-Action/Feature/FeatureCommunity";
-
+import GridsCommunity from "../../components/sections/Parallax-Action/Grids/GridsCommunity";
+import ScrollHorOne from "../../components/sections/Parallax-Action/ScrollHorOne";
 
 export default function Community() {
  return (
@@ -11,7 +12,10 @@ export default function Community() {
      <HeroCommunity />
      <FeatureCommunity/>
      <ScrollingLogos />
+     <GridsCommunity />
      <StartProyectOne />
+      <ScrollHorOne/>
+
    </>
  )
 }
