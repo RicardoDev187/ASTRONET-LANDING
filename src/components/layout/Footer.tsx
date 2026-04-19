@@ -60,24 +60,6 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-const scrollToParallax = (sectionNumber: number) => {
-  const container = document.getElementById('parallax-container');
-  
-  if (container) {
-    // Calculamos la altura de una sección (100vh menos el header de 64px)
-    const sectionHeight = window.innerHeight - 64; 
-    
-    // Calculamos la posición: el inicio del contenedor + (altura * (sección - 1))
-    // Esto nos lleva al punto exacto donde la sección se vuelve visible
-    const targetScroll = container.offsetTop + (sectionHeight * (sectionNumber - 1));
-
-    window.scrollTo({
-      top: targetScroll,
-      behavior: 'smooth'
-    });
-  }
-};
-
   return (
     <footer className="w-full bg-[#0d1110] text-zinc-950 pt-20 pb-10 dark:bg-[#0d1110] dark:text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">

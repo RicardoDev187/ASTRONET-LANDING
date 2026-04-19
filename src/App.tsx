@@ -11,7 +11,6 @@ import Belleek from './pages/Belleek';
 import Salboy from './pages/Salboy';
 import Contact from './pages/Contact';
 import Whatwedo from './pages/Whatwedo';
-import Booking from './pages/whatwedo/Outsourcing';
 import ECommerce from './pages/whatwedo/ECommerce';
 import Subscriptions from './pages/Subscriptions';
 import IA from './pages/whatwedo/IA';
