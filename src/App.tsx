@@ -32,8 +32,11 @@ export default function App() {
           <Route path="/whatwedo">
            <Route index element={<Whatwedo />} />
            <Route path="Software-Development" element={<SoftwareDevelopment/>} />
+           <Route path="SoftwareDevelopment" element={<SoftwareDevelopment/>} />
+           <Route path="software-development" element={<SoftwareDevelopment/>} />
            <Route path="Outsourcing" element={<Outsourcing/>} />
            <Route path="Artificial-Intelligence" element={<IA/>} />
+           <Route path="IA" element={<IA/>} />
            <Route path="eCommerce" element={<ECommerce/>} />
           </Route>
           <Route path="About-Us" element={<About />} />

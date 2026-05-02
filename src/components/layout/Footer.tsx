@@ -100,17 +100,15 @@ export default function Footer() {
             </a>
 
             {/* Redirección al CTA / Formulario de contacto */}
-            <a href="#contact" className="group flex items-center gap-4 border-l border-zinc-900/10 pl-10 hidden sm:flex dark:border-white/10">
+            <Link to="/contact" className="group flex items-center gap-4 border-l border-zinc-900/10 pl-10 hidden sm:flex dark:border-white/10">
               <div className="p-3 rounded-xl bg-zinc-950/5 group-hover:bg-[#A3FF00]/10 transition-colors dark:bg-white/5">
                 <Calendar size={20} className="text-zinc-950 group-hover:text-[#A3FF00] dark:text-white" />
               </div>
               <div>
                 <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">Schedule a call</p>
-                <Link to="/contact">
                 <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">START A PROJECT</p>
-                </Link>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -121,20 +119,18 @@ export default function Footer() {
           <div>
             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-[#A3FF00] mb-8">Navigation</h4>
             <ul className="space-y-4 text-xs font-bold text-zinc-400 uppercase tracking-widest">
-              <li><a href="#home" className="text-[#A3FF00] hover:brightness-125">Home</a></li>
               <li>
-                <Link to="/about-us">
-                  <a className="hover:text-white transition-colors">About Us</a>
-                </Link>
+                <Link to="/" className="text-[#A3FF00] hover:brightness-125">Home</Link>
               </li>
-              <li><a href="/#work" className="hover:text-white transition-colors">Latest Work</a></li>
-              <li><a href="/#services" className="hover:text-white transition-colors">How We Do</a></li>
+              <li>
+                <Link to="/About-Us" className="hover:text-white transition-colors">About Us</Link>
+              </li>
+              <li><Link to="/#work" className="hover:text-white transition-colors">Latest Work</Link></li>
+              <li><Link to="/#parallax-container" className="hover:text-white transition-colors">How We Do</Link></li>
               {/*
               <li><a href="#insights" className="hover:text-white transition-colors">Insights</a></li>
               */}
-             <Link to="/contact">
-              <li><a className="hover:text-white transition-colors">Contact</a></li>
-             </Link>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 

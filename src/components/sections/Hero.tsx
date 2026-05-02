@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import Button from '../ui/Button'
 
 export type HeroProps = {
@@ -8,10 +8,10 @@ export type HeroProps = {
 }
 
 export default function Hero({
-  eyebrow = 'ASTRONET • SOFTWARE DEVELOPMENT',
-  title = 'Scale Your Business With Virtual Assistants, AI Automations, and Custom Software',
+  eyebrow = 'ASTRONET - OUTSOURCING, AI AND SOFTWARE',
+  title = 'Scale Your Business With Custom Software, AI, and Outsourcing',
   description =
-    'Achieve your goals and maximize ROI with our scalable and flexible outsourcing solutions.',
+    'Achieve your goals and maximize ROI with our scalable solutions. From dedicated developers to intelligent automations and premium platforms.',
 }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-[#050505]">
@@ -33,21 +33,21 @@ export default function Hero({
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button href="#services" variant="secondary">
+            <Button href="#parallax-container" variant="secondary">
               How we do
             </Button>
 
             <Link to="/contact">
-            <Button  variant="ghost" className="justify-start dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 dark:active:bg-zinc-900/90">
-              <span className="inline-flex items-center gap-2">
-                <span className="grid size-2 rounded-full bg-zinc-950 dark:bg-white" />
-                Book a call
-              </span>
-            </Button>
+              <Button variant="ghost" className="justify-start border border-zinc-200 bg-white text-zinc-950 hover:bg-[#A3FF00] hover:border-[#A3FF00] hover:text-zinc-950 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:bg-[#A3FF00] dark:hover:border-[#A3FF00] dark:hover:text-zinc-950 dark:active:bg-zinc-800 transition-colors">
+                <span className="inline-flex items-center gap-2 font-bold">
+                  <span className="grid size-2 rounded-full bg-zinc-950 dark:bg-white" />
+                  Book a call
+                </span>
+              </Button>
             </Link>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-6 text-xs text-zinc-500 dark:text-white/60">
+          <div className="mt-10 flex flex-wrap gap-6 text-xs text-zinc-700 font-medium dark:text-zinc-300">
             <div className="flex items-center gap-2  dark:text-white ">
               <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white ">1</span>
               Product design
@@ -96,7 +96,7 @@ export default function Hero({
               </div>
 
               <div className="flex items-center justify-between">
-                <div className="text-xs text-zinc-500 dark:text-white/60">Built with Tailwind v4</div>
+                <div className="text-xs text-zinc-500 dark:text-white/60">Built for scalable growth</div>
                 <div className="h-2 w-24 rounded-full bg-zinc-950/10 dark:bg-white/10">
                   <div className="h-2 w-16 rounded-full bg-lime-400" />
                 </div>

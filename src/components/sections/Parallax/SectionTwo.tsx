@@ -31,7 +31,7 @@ export default function SectionTwo() {
         {/* LADO DERECHO */}
         <Link to="/whatwedo/eCommerce" className="no-underline">
           <div 
-            className="group cursor-default flex flex-col items-start"
+            className="group cursor-pointer flex flex-col items-start"
             onMouseEnter={() => setActiveImage(imgEcommerce1)}
             onMouseLeave={() => setActiveImage(imgEcommerce)}
           >

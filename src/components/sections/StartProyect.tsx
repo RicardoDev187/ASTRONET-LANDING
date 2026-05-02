@@ -27,11 +27,10 @@ export default function StartProyect() {
       {/*TEXTO PRINCIPAL*/}
       <div className="text-center max-w-3xl mb-16">
         <h1 className="text-zinc-950 dark:text-white text-5xl md:text-7xl font-serif mb-8 leading-tight tracking-[-0.03em]">
-          Enquire Here for Website Design Services
+          Start Your Project With Astronet
         </h1>
         <p className="text-zinc-500 dark:text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-          We specialise in creating custom websites tailored to reflect the unique identity and values of your business. 
-          Enquire today about website design services and give your business the digital presence it deserves.
+          [PENDING DESCRIPTION]
         </p>
       </div>
 

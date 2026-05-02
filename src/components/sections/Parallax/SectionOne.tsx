@@ -16,9 +16,9 @@ export default function SectionOne() {
       <div className="w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         
         {/* BLOQUE DE TEXTO */}
-        <Link to="/whatwedo/software-development">
+        <Link to="/whatwedo/Software-Development">
         <div 
-          className="group flex flex-col items-start cursor-default"
+          className="group flex flex-col items-start cursor-pointer"
           onMouseEnter={() => setActiveImage(imgCompany)}
           onMouseLeave={() => setActiveImage(imgCompany1)}
         >

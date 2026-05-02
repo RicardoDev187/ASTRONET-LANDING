@@ -28,7 +28,7 @@ export default function CTA({
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-              <Link to= "contact">
+              <Link to="/contact">
               <Button className="w-full lg:w-56">
                 Start a project
               </Button>

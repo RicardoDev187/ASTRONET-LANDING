@@ -3,7 +3,7 @@ import HeroCompany from "../../components/sections/Parallax-Action/Hero/HeroComp
 import FeatureCompany from "../../components/sections/Parallax-Action/Feature/FeatureCompany";
 import ScrollingLogos from "../../components/sections/Parallax-Action/ScrollingLogos";
 import StartProyectOne from "../../components/sections/Parallax-Action/StarProyectOne";
-import ScrollHorOne from "../../components/sections/Parallax-Action/ScrollHorOne";
+
 
 export default function SoftwareDevelopment() { 
     return (
@@ -13,7 +13,7 @@ export default function SoftwareDevelopment() {
         <ScrollingLogos/>
         <GridsCompany/>
         <StartProyectOne/>
-        <ScrollHorOne/>
+
          
 
 

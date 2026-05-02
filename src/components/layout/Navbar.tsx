@@ -75,18 +75,16 @@ const closeMenuOnNavigate = () => {
 
           {/* Central*/}
           <div className="hidden md:flex flex-1 items-center  gap-10 ml-12 ">
-            <Link to="/whatwedo">
-            <a className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+            <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               How we do
-            </a>
             </Link>
-            <a href="/#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+            <Link to="/#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Outsourcing And vas
-            </a>
+            </Link>
             <Link to="/subscriptions">
-              <a className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+              <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
                 Subscriptions
-              </a>
+              </span>
             </Link>
             {/* <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Case Studies

@@ -76,7 +76,7 @@ export default function Showcase() {
 
             <Link
               to="/contact"
-              className="inline-block px-8 py-3 bg-zinc-200 text-zinc-900 rounded-2xl font-semibold hover:bg-zinc-300 transition-colors duration-200 cursor-pointer dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700"
+              className="inline-flex items-center justify-center rounded-xl bg-zinc-200 dark:bg-zinc-800 px-6 sm:px-8 py-3 font-black uppercase tracking-tight text-xs sm:text-sm text-zinc-950 dark:text-white transition-all duration-300 hover:bg-[#A3FF00] hover:text-zinc-950 hover:shadow-[0_4px_14px_0_rgba(163,255,0,0.3)]"
             >
               Work with us
             </Link>

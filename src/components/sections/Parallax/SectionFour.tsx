@@ -24,7 +24,7 @@ export default function SectionFour() {
 
         {/* BLOQUE DE TEXTO*/}
          <Link to="/whatwedo/Artificial-Intelligence">
-        <div className="group cursor-default flex flex-col items-start">
+        <div className="group cursor-pointer flex flex-col items-start">
       
           <p className="text-[#A3FF00] font-black text-[10px] tracking-[0.4em] mb-4 transition-transform duration-500 group-hover:-translate-x-4">
             ↗ HOW WE DO

@@ -7,17 +7,17 @@ type MenuProps = {
 
 const navigationLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "#services" },
-  { name: "Outsoursing", href: "#outsourcing-vas" },
+  { name: "About Us", href: "/About-Us" },
+  { name: "Outsourcing", href: "/#outsourcing-vas" },
   { name: "How we do", href: "/whatwedo", active: true },
-  { name: "Case Studies", href: "#work" },
+  { name: "Case Studies", href: "/#work" },
 ];
 
 const whatWeDoLinks = [
-  { name: "Company Websites", href: "/whatwedo/SoftwareDevelopment" },
+  { name: "Company Websites", href: "/whatwedo/Software-Development" },
   { name: "Online Store", href: "/whatwedo/eCommerce" },
-  { name: "Booking Websites", href: "/whatwedo/Outsourcing" },
-  { name: "Community Platforms", href: "/whatwedo/IA" },
+  { name: "Outsourcing", href: "/whatwedo/Outsourcing" },
+  { name: "AI", href: "/whatwedo/Artificial-Intelligence" },
 ];
 
 export default function Menu({ onNavigate }: MenuProps) {
@@ -25,41 +25,27 @@ export default function Menu({ onNavigate }: MenuProps) {
     <div className="w-full h-full text-white p-6 sm:p-10 md:p-20 flex flex-col justify-center">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 gap-8 md:grid-cols-3">
         
-        
         <section className="w-full">
           <h3 className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold mb-8">
-            Navegation
+            Navigation
           </h3>
           <ul className="space-y-4 text-center md:text-left">
             {navigationLinks.map((link) => (
               <li key={link.name}>
-                {link.href.startsWith('#') ? (
-                  <a
-                    href={link.href}
-                    onClick={() => onNavigate?.()}
-                    className={`text-2xl sm:text-3xl md:text-4xl font-serif hover:text-[#A3FF00] transition-all ${
-                      link.active ? "text-[#A3FF00]" : "text-white "
-                    }`}
-                  >
-                    {link.name}
-                  </a>
-                ) : (
-                  <Link
-                    to={link.href}
-                    onClick={() => onNavigate?.()}
-                    className={`text-2xl sm:text-3xl md:text-4xl font-serif hover:text-[#A3FF00] transition-all ${
-                      link.active ? "text-[#A3FF00]" : "text-white "
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                )}
+                <Link
+                  to={link.href}
+                  onClick={() => onNavigate?.()}
+                  className={`text-2xl sm:text-3xl md:text-4xl font-serif hover:text-[#A3FF00] transition-all block w-full ${
+                    link.active ? "text-[#A3FF00]" : "text-white "
+                  }`}
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>
         </section>
 
-       
         <section>
           <h3 className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold mb-8">
            How we do
@@ -70,7 +56,7 @@ export default function Menu({ onNavigate }: MenuProps) {
                 <Link
                   to={item.href}
                   onClick={() => onNavigate?.()}
-                  className="text-xl sm:text-2xl md:text-3xl font-serif text-white hover:text-[#A3FF00] transition-all"
+                  className="text-xl sm:text-2xl md:text-3xl font-serif text-white hover:text-[#A3FF00] transition-all block w-full"
                 >
                   {item.name}
                 </Link>
@@ -79,7 +65,6 @@ export default function Menu({ onNavigate }: MenuProps) {
           </ul>
         </section>
 
-        
         <section>
           <h3 className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold mb-8">
             Contact
@@ -106,8 +91,12 @@ export default function Menu({ onNavigate }: MenuProps) {
               </div>
             </div>
 
-            <Link to="/contact" onClick={() => onNavigate?.()} className="group">
-              <div className="flex items-start gap-4 group cursor-pointer">
+            <Link 
+              to="/contact" 
+              onClick={() => onNavigate?.()} 
+              className="group block"
+            >
+              <div className="flex items-start gap-4 group cursor-pointer transition-transform hover:scale-105 duration-300">
                 <div className="p-3 bg-white/5 rounded-xl group-hover:bg-[#A3FF00]/20 transition-colors">
                   <PhoneCall size={24} className="group-hover:text-[#A3FF00]" />
                 </div>
