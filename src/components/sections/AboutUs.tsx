@@ -1,8 +1,8 @@
 import { useGoogleLogin } from '@react-oauth/google';
-import GUAPOS from "../../assets/GUAPOS.jpg";
+import GUAPOS from "../../assets/Guapos.jpg";
 import logoBussines from "../../assets/Logos/LogoBussines.jpg";
 import  logoCompany from "../../assets/Logos/LogoCompany.jpg";
-import logocontruction from "../../assets/Logos/logocontruction.png";
+import logocontruction from "../../assets/Logos/LogoContruction.png";
 
 
 const AboutHero = () => (
